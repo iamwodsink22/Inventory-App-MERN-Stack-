@@ -1,0 +1,32 @@
+.info-box {
+  width: 100%;
+  height: 20rem;
+  max-width: 22rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  color: #fff;
+  transform: translateY(0);
+  transition: all 0.3s;
+}
+.info-box:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+.info-box .info-icon {
+  padding: 0 2rem;
+  color: #fff;
+}
+.info-box .info-text > * {
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .info-box {
+    max-width: 100%;
+  }
+}/*# sourceMappingURL=infobox.css.map */
