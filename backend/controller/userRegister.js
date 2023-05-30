@@ -99,8 +99,8 @@ const logout = asyncHandler(async (req, res) => {
 const getprofile = asyncHandler(async (req, res) => {
   const user = await User.findById(req.user._id);
   if (user) {
-    const { _id, name, email, photo, phone_no, bio } = user;
-    res.status(201).json({ _id, name, email, photo, phone_no, bio });
+    const { _id, name, email, photo, phone, bio } = user;
+    res.status(201).json({ _id, name, email, photo, phone, bio });
   } else {
     res.status(400);
     throw new Error("User not found");
@@ -120,11 +120,11 @@ const loggedin = asyncHandler(async (req, res) => {
 const editProfile = asyncHandler(async (req, res) => {
   const user = await User.findById(req.user._id);
   if (user) {
-    const { name, email, photo, phone_no, bio } = user;
+    const { name, email, photo, phone, bio } = user;
     user.name = req.body.name || name;
     user.email = email;
     user.photo = req.body.photo || photo;
-    user.phone_no = req.body.phone_no || phone_no;
+    user.phone = req.body.phone || phone;
     user.bio = req.body.bio || bio;
 
     const updatedUser = await user.save();
@@ -133,7 +133,7 @@ const editProfile = asyncHandler(async (req, res) => {
       name: updatedUser.name,
       email: updatedUser.email,
       photo: updatedUser.photo,
-      phone_no: updatedUser.phone_no,
+      phone: updatedUser.phone,
       bio: updatedUser.bio,
     });
   } else {
@@ -229,11 +229,11 @@ const resetpw = asyncHandler(async (req, res) => {
   if (userToken) {
     const user = await User.findOne({ _id: userToken.userId });
     if (user) {
-      const { name, email, photo, phone_no, bio } = user;
+      const { name, email, photo, phone, bio } = user;
       user.name = name;
       user.email = email;
       user.photo = photo;
-      user.phone_no = phone_no;
+      user.phone = phone;
       user.bio = bio;
       user.password = password;
 

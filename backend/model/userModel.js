@@ -26,11 +26,11 @@ const userSchema = mongoose.Schema(
       type: Object,
       required: [true, "Please Add a Photo"],
       default:
-        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fanonymous-avatar&psig=AOvVaw1mQ4YNiQRQy-OMfgEn9cIW&ust=1682668503104000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPC99OTKyf4CFQAAAAAdAAAAABAE",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/330px-Cristiano_Ronaldo_2018.jpg",
     },
     phone: {
       type: String,
-      default: "1234",
+      default: "+123",
     },
     bio: {
       type: String,
