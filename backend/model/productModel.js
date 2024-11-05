@@ -41,5 +41,5 @@ const productScheme = mongoose.Schema(
     timestamps: true,
   }
 );
-const InvProduct = mongoose.model("inventoryproduct", productScheme);
-module.exports = InvProduct;
+const Product = mongoose.model("inventoryproduct", productScheme);
+module.exports = Product;
