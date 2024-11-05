@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-export const BACKEND_URL = process.env.REACT_APP_BACKEND;
+export const BACKEND_URL = "https://vercel.com/araksha-puris-projects/inventory-app-api";
 const API_URL = `${BACKEND_URL}/api/product`;
 
 const createProduct = async (formData) => {
