@@ -38,11 +38,11 @@ const Home = () => {
       </nav>
       <section className="container hero">
         <div className="hero-text">
-          <h2>Online Shopping with DaWodsink</h2>
+          <h2>Inventory Management with DaWodsink</h2>
           <p>
-            This Online Shopping system is designed to buy other peoples product
-            and sell your own deprecated product to make shopping and sharing
-            easier and more efficient
+          Our inventory app helps businesses efficiently track, manage, and 
+          organize their stock levels in real time. It allows users to monitor 
+          product quantities, set reorder points, and view historical data on stock movements.
           </p>
         </div>
 
