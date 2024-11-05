@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-export const BACKEND_URL = "https://inventory-app-api-eight.vercel.app";
+export const BACKEND_URL = "https://inventory-app-mern-stack-api.vercel.app";
 const API_URL = `${BACKEND_URL}/api/product`;
 
 const createProduct = async (formData) => {
