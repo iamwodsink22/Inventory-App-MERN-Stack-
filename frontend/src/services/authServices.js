@@ -1,6 +1,6 @@
 import axios from "axios";
 import { toast } from "react-toastify";
-export const BACKEND_URL = process.env.REACT_APP_BACKEND;
+export const BACKEND_URL = "https://vercel.com/araksha-puris-projects/inventory-app-api";
 export const validateEmail = (email) => {
   return email.match(
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
