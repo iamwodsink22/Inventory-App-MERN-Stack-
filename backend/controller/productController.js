@@ -42,7 +42,7 @@ const createProduct = asyncHandler(async (req, res) => {
     throw new Error("Product already present");
   }
   if (!productExist) {
-    const product = Product.create({
+    const product = await Product.create({
       user: req.user.id,
       name,
       sku,
