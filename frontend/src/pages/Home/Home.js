@@ -38,7 +38,7 @@ const Home = () => {
       </nav>
       <section className="container hero">
         <div className="hero-text">
-          <h2>Inventory Management with DaWodsink</h2>
+          <h2>Inventory Management</h2>
           <p>
           Our inventory app helps businesses efficiently track, manage, and 
           organize their stock levels in real time. It allows users to monitor 
