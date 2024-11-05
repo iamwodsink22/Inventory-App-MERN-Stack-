@@ -50,5 +50,5 @@ userSchema.pre("save", async function (next) {
   this.password = hashedpw;
   next();
 });
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("inventoryuser", userSchema);
 module.exports = User;
