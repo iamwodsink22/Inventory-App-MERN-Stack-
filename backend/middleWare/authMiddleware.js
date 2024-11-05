@@ -10,7 +10,7 @@ const protect = asyncHandler(async (req, res, next) => {
     throw new Error("Not Authorized, Please Login");
   }
   const verified = jtoken.verify(token, process.env.JWT_SECRET);
-  user = await User.findById(verified.id).select("-password");
+  const user = await User.findById(verified.id).select("-password");
   if (!user) {
     res.status(401);
     throw new Error("User not found");

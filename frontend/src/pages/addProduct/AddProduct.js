@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { createProduct } from "../../redux/features/products/productSlice";
 import Loader from "../../Components/Loader/Loader";
-import { toast } from "react-toastify";
+
 
 const AddProduct = () => {
   const dispatch = useDispatch();

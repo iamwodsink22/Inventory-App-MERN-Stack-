@@ -20,6 +20,7 @@ const createProduct = asyncHandler(async (req, res) => {
       uploadedFile = await cloudinary.uploader.upload(req.file.path, {
         folder: "Inventory",
         resource_type: "image",
+        
       });
     } catch (error) {
       res.status(500);
